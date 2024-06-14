@@ -15,16 +15,24 @@ public class UserServiceImpl implements UserServiceI {
     private UserRepository userRepository;//field Injection
 
 
+//   save user data in database
     @Override
     public User createUser(User user) {
         User save = userRepository.save(user);
-        return null;
+        return save;
     }
 
+//    update user information
     @Override
     public User updateUser(User user, Long uid) {
+        User user1 = userRepository.findById(uid).get();
+        user1.setUage(user.getUage());
+        user1.setUabout(user.getUabout());
+        user1.setUemail(user.getUemail());
 
-        return null;
+        User updateduser = userRepository.save(user1);
+
+        return updateduser;
     }
 
     @Override
