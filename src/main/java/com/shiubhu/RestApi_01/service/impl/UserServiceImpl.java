@@ -18,11 +18,12 @@ public class UserServiceImpl implements UserServiceI {
     @Override
     public User createUser(User user) {
         User save = userRepository.save(user);
-        return save;
+        return null;
     }
 
     @Override
     public User updateUser(User user, Long uid) {
+
         return null;
     }
 
