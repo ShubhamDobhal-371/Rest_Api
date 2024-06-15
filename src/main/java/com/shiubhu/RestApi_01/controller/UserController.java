@@ -7,6 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api") //indicate which type of http methode call
 public class UserController {
@@ -28,7 +30,7 @@ public class UserController {
     @PutMapping("/user/{uid}")
     public ResponseEntity<User> updateUSer(@RequestBody User user,@PathVariable Long uid){
         User updateduser = userServiceI.updateUser(user, uid);
-        return new ResponseEntity<User>(updateduser,HttpStatus.OK);
+        return new ResponseEntity<User>(updateduser,HttpStatus.CREATED);
     }
 
 //    Exception propagation concept when we handle exception in child then it propagete to parante class/main class
@@ -38,6 +40,13 @@ public class UserController {
         User singleUser = userServiceI.getSingleUser(uid);
         return new ResponseEntity<User>(singleUser,HttpStatus.OK);
     }
+
+    @GetMapping("/user/all")
+    public ResponseEntity<List<User>> getAllUser(){
+        List<User> allUSer = userServiceI.getAllUSer();
+        return new ResponseEntity<List<User>>(allUSer,HttpStatus.OK);
+    }
+
 
 
 }
