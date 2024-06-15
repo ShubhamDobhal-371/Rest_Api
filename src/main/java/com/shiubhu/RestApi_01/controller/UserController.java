@@ -31,5 +31,13 @@ public class UserController {
         return new ResponseEntity<User>(updateduser,HttpStatus.OK);
     }
 
+//    Exception propagation concept when we handle exception in child then it propagete to parante class/main class
+
+    @GetMapping("user/{uid}")
+    public ResponseEntity<User> getSingleUser(@PathVariable Long uid) throws Exception {
+        User singleUser = userServiceI.getSingleUser(uid);
+        return new ResponseEntity<User>(singleUser,HttpStatus.OK);
+    }
+
 
 }
