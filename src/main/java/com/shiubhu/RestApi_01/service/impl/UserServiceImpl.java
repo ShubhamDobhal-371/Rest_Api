@@ -69,12 +69,11 @@ public class UserServiceImpl implements UserServiceI {
 
         userRepository.delete(user);
 
-
-
     }
 
     @Override
     public void deleteAllUser() {
+        userRepository.deleteAll();
 
 
     }
