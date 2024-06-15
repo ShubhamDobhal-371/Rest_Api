@@ -30,6 +30,7 @@ public class UserServiceImpl implements UserServiceI {
         user1.setUage(user.getUage());
         user1.setUabout(user.getUabout());
         user1.setUemail(user.getUemail());
+        user1.setUname(user.getUname());
 
         User updateduser = userRepository.save(user1);
 
