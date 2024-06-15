@@ -48,21 +48,34 @@ public class UserServiceImpl implements UserServiceI {
         } else {
             throw new Exception("Resource not found" + uid);
         }
+//handle nullpointer exeption using lambda function java 8 feature.
+//
+//        User user1=userRepository.findById(uid).get()
+//                .orElseThrow(()->new RuntimeException("Resource not found"+uid));
     }
-
 
     @Override
     public List<User> getAllUSer() {
-        return null;
+
+        List<User> alluser = userRepository.findAll();
+        return alluser;
     }
 
     @Override
     public void deleteUser(Long uid) {
 
+        User user = userRepository.findById(uid).
+                orElseThrow(() -> new RuntimeException("Resource not found on server"));
+
+        userRepository.delete(user);
+
+
+
     }
 
     @Override
     public void deleteAllUser() {
+
 
     }
 }
