@@ -14,7 +14,7 @@ public interface UserServiceI {
     User updateUser(User user,Long uid);
 
 //    get
-    User getSingleUser(Long uid);
+    User getSingleUser(Long uid) throws Exception;
 
     List<User> getAllUSer();
 

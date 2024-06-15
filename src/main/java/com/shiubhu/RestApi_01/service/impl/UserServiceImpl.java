@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserServiceI {
@@ -15,14 +16,14 @@ public class UserServiceImpl implements UserServiceI {
     private UserRepository userRepository;//field Injection
 
 
-//   save user data in database
+    //   save user data in database
     @Override
     public User createUser(User user) {
         User save = userRepository.save(user);
         return save;
     }
 
-//    update user information
+    //    update user information
     @Override
     public User updateUser(User user, Long uid) {
         User user1 = userRepository.findById(uid).get();
@@ -36,9 +37,19 @@ public class UserServiceImpl implements UserServiceI {
     }
 
     @Override
-    public User getSingleUser(Long uid) {
-        return null;
+    public User getSingleUser(Long uid) throws Exception {
+
+        Optional<User> user = userRepository.findById(uid);
+//        handle null pointer exception using java8 feature Optional class method "isPresent()".
+//        throgh the optional class(handle only nullpointer exceptin) we avoide nullpointer exception.
+
+        if (user.isPresent()) {
+            return user.get();
+        } else {
+            throw new Exception("Resource not found" + uid);
+        }
     }
+
 
     @Override
     public List<User> getAllUSer() {
