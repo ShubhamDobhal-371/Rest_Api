@@ -39,7 +39,10 @@ public class UserController {
 
     @PutMapping("/user/{uid}")
     public ResponseEntity<User> updateUSer(@RequestBody User user,@PathVariable Long uid){
+
+        log.info("Entering the req for Update user data "+uid);
         User updateduser = userServiceI.updateUser(user, uid);
+        log.info("Complete the req for Update user data "+uid);
         return new ResponseEntity<User>(updateduser,HttpStatus.CREATED);
     }
 

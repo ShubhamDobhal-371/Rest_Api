@@ -31,6 +31,7 @@ public class UserServiceImpl implements UserServiceI {
     //    update user information
     @Override
     public User updateUser(User user, Long uid) {
+        log.info("Initialing the dao call for the update user data " +uid);
         User user1 = userRepository.findById(uid).get();
         user1.setUage(user.getUage());
         user1.setUabout(user.getUabout());
@@ -38,6 +39,7 @@ public class UserServiceImpl implements UserServiceI {
         user1.setUname(user.getUname());
 
         User updateduser = userRepository.save(user1);
+        log.info("complete the dao call for save the data " +uid);
 
         return updateduser;
     }
