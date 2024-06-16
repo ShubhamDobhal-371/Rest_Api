@@ -39,7 +39,7 @@ public class UserServiceImpl implements UserServiceI {
         user1.setUname(user.getUname());
 
         User updateduser = userRepository.save(user1);
-        log.info("complete the dao call for save the data " +uid);
+        log.info("complete the dao call for save the data  " +uid);
 
         return updateduser;
     }
