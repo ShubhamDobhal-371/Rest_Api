@@ -32,3 +32,56 @@
 2024-06-16T18:57:16.668+05:30  INFO 11416 --- [RestApi_01] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-06-16T18:57:16.671+05:30  INFO 11416 --- [RestApi_01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-06-16T18:57:16.682+05:30  INFO 11416 --- [RestApi_01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-16T19:04:32.301+05:30  INFO 5996 --- [RestApi_01] [main] c.s.R.RestApi01ApplicationTests          : Starting RestApi01ApplicationTests using Java 17.0.7 with PID 5996 (started by shubhu rajput in C:\Users\shubhu rajput\OneDrive\Desktop\IntelliJ_Project\RestApi_01)
+2024-06-16T19:04:32.304+05:30  INFO 5996 --- [RestApi_01] [main] c.s.R.RestApi01ApplicationTests          : No active profile set, falling back to 1 default profile: "default"
+2024-06-16T19:04:33.490+05:30  INFO 5996 --- [RestApi_01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-16T19:04:33.603+05:30  INFO 5996 --- [RestApi_01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2024-06-16T19:04:34.328+05:30  INFO 5996 --- [RestApi_01] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-16T19:04:34.432+05:30  INFO 5996 --- [RestApi_01] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-16T19:04:34.497+05:30  INFO 5996 --- [RestApi_01] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-16T19:04:35.071+05:30  INFO 5996 --- [RestApi_01] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-16T19:04:35.124+05:30  INFO 5996 --- [RestApi_01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-16T19:04:35.623+05:30  INFO 5996 --- [RestApi_01] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ecd8ab1
+2024-06-16T19:04:35.626+05:30  INFO 5996 --- [RestApi_01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-16T19:04:35.690+05:30  WARN 5996 --- [RestApi_01] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-16T19:04:35.691+05:30  WARN 5996 --- [RestApi_01] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-16T19:04:37.117+05:30  INFO 5996 --- [RestApi_01] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-16T19:04:37.172+05:30  INFO 5996 --- [RestApi_01] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-16T19:04:37.752+05:30  WARN 5996 --- [RestApi_01] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-16T19:04:38.386+05:30  INFO 5996 --- [RestApi_01] [main] c.s.R.RestApi01ApplicationTests          : Started RestApi01ApplicationTests in 6.6 seconds (process running for 8.526)
+2024-06-16T19:04:40.298+05:30  INFO 5996 --- [RestApi_01] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-16T19:04:40.301+05:30  INFO 5996 --- [RestApi_01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-16T19:04:40.315+05:30  INFO 5996 --- [RestApi_01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-06-16T19:05:18.192+05:30  INFO 11216 --- [RestApi_01] [main] c.s.RestApi_01.RestApi01Application      : Starting RestApi01Application using Java 17.0.7 with PID 11216 (C:\Users\shubhu rajput\OneDrive\Desktop\IntelliJ_Project\RestApi_01\target\classes started by shubhu rajput in C:\Users\shubhu rajput\OneDrive\Desktop\IntelliJ_Project\RestApi_01)
+2024-06-16T19:05:18.196+05:30  INFO 11216 --- [RestApi_01] [main] c.s.RestApi_01.RestApi01Application      : No active profile set, falling back to 1 default profile: "default"
+2024-06-16T19:05:19.292+05:30  INFO 11216 --- [RestApi_01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-16T19:05:19.393+05:30  INFO 11216 --- [RestApi_01] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 1 JPA repository interface.
+2024-06-16T19:05:20.370+05:30  INFO 11216 --- [RestApi_01] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-06-16T19:05:20.388+05:30  INFO 11216 --- [RestApi_01] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-16T19:05:20.389+05:30  INFO 11216 --- [RestApi_01] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-16T19:05:20.510+05:30  INFO 11216 --- [RestApi_01] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-16T19:05:20.511+05:30  INFO 11216 --- [RestApi_01] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2209 ms
+2024-06-16T19:05:20.787+05:30  INFO 11216 --- [RestApi_01] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-16T19:05:20.880+05:30  INFO 11216 --- [RestApi_01] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-16T19:05:20.940+05:30  INFO 11216 --- [RestApi_01] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-16T19:05:21.384+05:30  INFO 11216 --- [RestApi_01] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-16T19:05:21.424+05:30  INFO 11216 --- [RestApi_01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-16T19:05:21.832+05:30  INFO 11216 --- [RestApi_01] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44abdb1f
+2024-06-16T19:05:21.834+05:30  INFO 11216 --- [RestApi_01] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-16T19:05:21.895+05:30  WARN 11216 --- [RestApi_01] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-06-16T19:05:21.896+05:30  WARN 11216 --- [RestApi_01] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-06-16T19:05:23.084+05:30  INFO 11216 --- [RestApi_01] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-16T19:05:23.137+05:30  INFO 11216 --- [RestApi_01] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-16T19:05:23.504+05:30  WARN 11216 --- [RestApi_01] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-16T19:05:24.050+05:30  INFO 11216 --- [RestApi_01] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-06-16T19:05:24.066+05:30  INFO 11216 --- [RestApi_01] [main] c.s.RestApi_01.RestApi01Application      : Started RestApi01Application in 6.518 seconds (process running for 7.136)
+2024-06-16T19:05:41.349+05:30  INFO 11216 --- [RestApi_01] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-16T19:05:41.350+05:30  INFO 11216 --- [RestApi_01] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-16T19:05:41.353+05:30  INFO 11216 --- [RestApi_01] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-06-16T19:05:41.446+05:30  INFO 11216 --- [RestApi_01] [http-nio-8080-exec-1] c.s.R.controller.UserController          : Entering the req for getSinle user data 1
+2024-06-16T19:05:41.447+05:30  INFO 11216 --- [RestApi_01] [http-nio-8080-exec-1] c.s.R.service.impl.UserServiceImpl       : Initialing the dao call for the getSingle user data 1
+2024-06-16T19:05:41.572+05:30  INFO 11216 --- [RestApi_01] [http-nio-8080-exec-1] c.s.R.service.impl.UserServiceImpl       : Compeleted the dao call for the getSingle user data 1
+2024-06-16T19:05:41.577+05:30  INFO 11216 --- [RestApi_01] [http-nio-8080-exec-1] c.s.R.controller.UserController          : Complete the req for getSinle user data 1
+2024-06-16T19:06:12.679+05:30  INFO 11216 --- [RestApi_01] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-06-16T19:06:12.682+05:30  INFO 11216 --- [RestApi_01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-06-16T19:06:12.692+05:30  INFO 11216 --- [RestApi_01] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -59,7 +59,9 @@ public class UserController {
 
     @GetMapping("/user/all")
     public ResponseEntity<List<User>> getAllUser(){
+        log.info("Entering the req for get all user data");
         List<User> allUSer = userServiceI.getAllUSer();
+        log.info("complete the request for get all user data");
         return new ResponseEntity<List<User>>(allUSer,HttpStatus.OK);
     }
 

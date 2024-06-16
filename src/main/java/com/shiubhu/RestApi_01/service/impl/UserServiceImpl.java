@@ -65,8 +65,9 @@ public class UserServiceImpl implements UserServiceI {
 
     @Override
     public List<User> getAllUSer() {
-
+        log.info("Initialing the the dao call for the get all user data");
         List<User> alluser = userRepository.findAll();
+        log.info("Completed the dao call for the get all user data");
         return alluser;
     }
 
