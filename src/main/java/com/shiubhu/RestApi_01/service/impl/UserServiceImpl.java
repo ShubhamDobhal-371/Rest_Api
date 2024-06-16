@@ -73,8 +73,9 @@ public class UserServiceImpl implements UserServiceI {
 
     @Override
     public void deleteUser(Long uid) {
-
+        log.info("Initialing the dao call for the delete user data " +uid);
         User user = userRepository.findById(uid).orElseThrow(() -> new RuntimeException("Resource not found on server"));
+        log.info("Complete the dao call for the getSingle user data " +uid);
 
         userRepository.delete(user);
 
