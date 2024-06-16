@@ -2,6 +2,9 @@ package com.shiubhu.RestApi_01.controller;
 
 import com.shiubhu.RestApi_01.model.User;
 import com.shiubhu.RestApi_01.service.UserServiceI;
+//import lombok.extern.slf4j.Slf4j;
+
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,19 +12,26 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/api") //indicate which type of http methode call
 public class UserController {
+
+//    Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
     private UserServiceI userServiceI;
 
 
 
 //    @RequestMapping(method = RequestMethod.POST, name = "/createuser")---->(Use before postmapping not exisest)
-    @PostMapping("/create")
+    @PostMapping("/user")
     public ResponseEntity<User> createUser(@RequestBody User user){
+//        logger.info("Entering the req for save user data");
+        log.info("Entering the req for save user data");
 
         User createduser = userServiceI.createUser(user);
+
+        log.info("Completed the request for save user data");
 
         return new ResponseEntity<User>(createduser, HttpStatus.CREATED);//201
 

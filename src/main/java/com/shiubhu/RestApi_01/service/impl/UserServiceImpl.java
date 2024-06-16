@@ -3,6 +3,8 @@ package com.shiubhu.RestApi_01.service.impl;
 import com.shiubhu.RestApi_01.dao.UserRepository;
 import com.shiubhu.RestApi_01.model.User;
 import com.shiubhu.RestApi_01.service.UserServiceI;
+
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +12,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Slf4j
 public class UserServiceImpl implements UserServiceI {
 
     @Autowired
@@ -19,7 +22,9 @@ public class UserServiceImpl implements UserServiceI {
     //   save user data in database
     @Override
     public User createUser(User user) {
+        log.info("Initialing the dao call for the save user data");
         User save = userRepository.save(user);
+        log.info("complete the dao call for save the data");
         return save;
     }
 
