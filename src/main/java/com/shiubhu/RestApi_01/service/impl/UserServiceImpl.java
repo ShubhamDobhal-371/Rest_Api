@@ -46,12 +46,13 @@ public class UserServiceImpl implements UserServiceI {
 
     @Override
     public User getSingleUser(Long uid) throws Exception {
-
+        log.info("Initialing the dao call for the getSingle user data " +uid);
         Optional<User> user = userRepository.findById(uid);
 //        handle null pointer exception using java8 feature Optional class method "isPresent()".
 //        throgh the optional class(handle only nullpointer exceptin) we avoide nullpointer exception.
 
         if (user.isPresent()) {
+            log.info("Compeleted the dao call for the getSingle user data " +uid);
             return user.get();
         } else {
             throw new Exception("Resource not found" + uid);

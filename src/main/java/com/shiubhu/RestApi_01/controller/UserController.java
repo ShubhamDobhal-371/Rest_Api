@@ -50,7 +50,10 @@ public class UserController {
 
     @GetMapping("user/{uid}")
     public ResponseEntity<User> getSingleUser(@PathVariable Long uid) throws Exception {
+
+        log.info("Entering the req for getSinle user data "+uid);
         User singleUser = userServiceI.getSingleUser(uid);
+        log.info("Complete the req for getSinle user data "+uid);
         return new ResponseEntity<User>(singleUser,HttpStatus.OK);
     }
 
